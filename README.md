@@ -3,7 +3,7 @@
 - This project will be a collaboration of the following members:
 
 1. [Ben Bryant](https://github.com/Bryantellius)
-2. [YOUR NAME](YOUR GITHUB URL)
+2. [Scott Severance](https://github.com/mssever)
 
 ## Getting Started
 
