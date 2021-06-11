@@ -8,6 +8,7 @@ h1, h2 {
     font-weight: normal;
     font-variant: small-caps;
     color: #900;
+    font-family: serif;
 }
 
 h1 {
@@ -25,14 +26,16 @@ h2 {
     padding-left: 1ex;
 }
 
-img.bio {
-    width: 25em;
-    float:right;
-    padding: 1em;
-    margin: 0 0 1em 1em;
-    border: 0.5em solid #900;
-    border-radius: 1em;
+#profile-pic {
+    width: 15em;
+    padding: 0.5em;
+    border: 0.25em solid #900;
+    border-radius: 2em;
     background-color: white;
+    transform: rotate(10deg);
+    position: absolute;
+    right: 2em;
+    top: 2em;
 }
 
 ul li {
@@ -41,4 +44,8 @@ ul li {
 
 ul ul li {
     list-style-type: disc;
+}
+
+.narrow {
+    width: 50%;
 }
