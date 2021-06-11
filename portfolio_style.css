@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     color: #300;
+    background-color: white;
 }
 
 h1, h2 {
@@ -16,14 +17,28 @@ h1 {
 }
 
 h2 {
-    font-size: 110%;
+    font-size: 150%;
     margin-bottom: 0;
+    border: 1px solid #900;
+    border-left: 2ex solid #900;
+    border-right: none;
+    padding-left: 1ex;
 }
 
 img.bio {
     width: 25em;
     float:right;
     padding: 1em;
+    margin: 0 0 1em 1em;
     border: 0.5em solid #900;
     border-radius: 1em;
+    background-color: white;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: disc;
 }
