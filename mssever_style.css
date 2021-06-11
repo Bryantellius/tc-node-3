@@ -30,7 +30,7 @@ h2 {
     width: 15em;
     padding: 0.5em;
     border: 0.25em solid #900;
-    border-radius: 2em;
+    border-radius: 2em 0;
     background-color: white;
     transform: rotate(10deg);
     position: absolute;
