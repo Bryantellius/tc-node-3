@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    color: #300;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-variant: small-caps;
+    color: #900;
+}
+
+h1 {
+    font-size: 400%;
+    text-align: center;
+    margin:0;
+}
+
+h2 {
+    font-size: 110%;
+    margin-bottom: 0;
+}
+
+img.bio {
+    width: 25em;
+    float:right;
+    padding: 1em;
+    border: 0.5em solid #900;
+    border-radius: 1em;
+}
