@@ -1,0 +1,34 @@
+h1 {
+    font-size: 48px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid grey;
+}
+
+html {
+    text-align: center;
+}
+
+.intro { 
+    font-size: 18px;
+}
+
+.list-item {
+    padding: 5px;
+    
+}
+
+#list-group {
+    list-style: none;
+    padding-right: 40px;
+    
+}
+
+#profile-pic {
+    width: auto;
+    height: 200px;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+}
