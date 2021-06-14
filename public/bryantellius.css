@@ -1,5 +1,6 @@
 * {
   border: 1px solid black;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -24,4 +25,9 @@ html {
 #profile-pic {
   width: auto;
   height: 200px;
+}
+
+table {
+  width: 500px;
+  margin: auto;
 }
