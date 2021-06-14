@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ben Bryant | Showcase</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Check me out!" />
+    <link rel="stylesheet" href="./bryantellius.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 class="red">Ben Bryant</h1>
+        <p class="red">I am Ben</p>
+        <img
+          id="profile-pic"
+          src="./example-image.png"
+          alt="A close up picture of Ben Bryant"
+        />
+      </section>
+      <section>
+        <h2>Social Media</h2>
+        <ul id="list-group">
+          <li class="list-item red">
+            <a
+              href="https://github.com/Bryantellius"
+              title="Ben Bryant on Github"
+              >Github</a
+            >
+          </li>
+          <li class="list-item">
+            <a
+              href="https://www.linkedin.com/in/benjaminrbryant/"
+              title="Ben Bryant on LinkedIn"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact Me!</h2>
+        <form>
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              title="Your name"
+              aria-label="Name"
+              placeholder="Jane Doe"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              aria-label="Email"
+              placeholder="email@email.com"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              aria-label="Message"
+              placeholder="I love your work..."
+            ></textarea>
+          </div>
+          <div>
+            <label for="newsletterSignUp">Sign up for my newsletter</label>
+            <input
+              type="checkbox"
+              name="newsletterSignUp"
+              id="newsletterSignUp"
+            />
+          </div>
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
