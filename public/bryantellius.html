@@ -18,27 +18,135 @@
         />
       </section>
       <section>
-        <table>
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ben</td>
-              <td>Bryant</td>
-              <td>bbryant@truecoders.io</td>
-            </tr>
-            <tr>
-              <td>Tanner</td>
-              <td>Riddle</td>
-              <td>triddle@truecoders.io</td>
-            </tr>
-          </tbody>
-        </table>
+        <form>
+          <table>
+            <tbody>
+              <!-- Name -->
+              <tr>
+                <td>
+                  <label for="name">Name</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </td>
+              </tr>
+              <!-- Email -->
+              <tr>
+                <td>
+                  <label for="email">Email</label>
+                </td>
+                <td>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="name@domain.com"
+                    required
+                  />
+                </td>
+              </tr>
+              <!-- Message -->
+              <tr>
+                <td>
+                  <label for="message">Message</label>
+                </td>
+                <td>
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="50"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+              <!-- DOB -->
+              <tr>
+                <td>
+                  <label for="dob">Date of Birth</label>
+                </td>
+                <td>
+                  <input type="date" id="dob" name="dob" />
+                </td>
+              </tr>
+              <!-- Favorite Color -->
+              <tr>
+                <td>
+                  <label for="favoriteColor">Favorite Color</label>
+                </td>
+                <td>
+                  <input type="color" name="favoriteColor" id="favoriteColor" />
+                </td>
+              </tr>
+              <!-- Favorite Topic So Far (Git, HTML, CSS) -->
+              <tr>
+                <td>
+                  <label for="noneRadio">None of the above</label>
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="favoriteTopic"
+                    id="noneRadio"
+                    value="none of the above"
+                    checked
+                  />
+                </td>
+                <tr>
+                  <td>
+                    <label for="gitRadio">Git</label>
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="favoriteTopic"
+                      id="gitRadio"
+                      value="git"
+                    />
+                  </td>
+
+                </tr>
+                <tr>
+                  <td>
+                    <label for="htmlRadio">HTML</label>
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="favoriteTopic"
+                      id="htmlRadio"
+                      value="html"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="cssRadio">CSS</label>
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="favoriteTopic"
+                      id="cssRadio"
+                      value="css"
+                    />
+                  </td>
+                </tr>
+              </tr>
+              <!-- Submit Button -->
+              <tr>
+                <td>
+                  <button type="submit">Submit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </section>
       <section>
         <h2>Social Media</h2>
@@ -58,51 +166,6 @@
             >
           </li>
         </ul>
-      </section>
-      <section>
-        <h2>Contact Me!</h2>
-        <form>
-          <div>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              title="Your name"
-              aria-label="Name"
-              placeholder="Jane Doe"
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              aria-label="Email"
-              placeholder="email@email.com"
-            />
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              aria-label="Message"
-              placeholder="I love your work..."
-            ></textarea>
-          </div>
-          <div>
-            <label for="newsletterSignUp">Sign up for my newsletter</label>
-            <input
-              type="checkbox"
-              name="newsletterSignUp"
-              id="newsletterSignUp"
-            />
-          </div>
-          <input type="submit" value="Send" />
-        </form>
       </section>
       <section>
         <form>
