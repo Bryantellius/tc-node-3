@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AAnderwald | Forms and Tables</title>
+        <meta charset="utf-8" />
+        <meta name="formsTables" content="example of forms and tables" />
+    </head>
+    
+    <body>
+        <div>
+            <form action="">
+                <label for="firstName"><strong>First Name</strong></label>
+                <input type="text" name="firstName" id="firstName" aria-label="First Name" required> <br><br>
+
+                <label for="lastName"><strong>Last Name</strong></label>
+                <input type="text" name="lastName" id="lastName" aria-label="Last Name" required> <br><br>
+
+                <label for="dob"><strong>DOB</strong></label>
+                <input type="date" name="dob" id="dob"> <br><br>
+
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" placeholder="name@domain.com" required> <br><br>
+
+                <label for="phoneNumber"><strong>Phone Number</strong></label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" aria-label="Phone Number"><br><br>
+                
+                <p><strong>Programming Experience</strong></p>
+                <label for="beginner">Beginner</label>
+                <input type="radio" name="beginner" id="beginner">
+                <label for="intermediate">Intermediate</label>
+                <input type="radio" name="intermediate" id="intermediate">
+                <label for="export">Export</label>
+                <input type="radio" name="export" id="export"> <br><br>
+
+                <label for="desiredCareer"><strong>Desired Career</strong></label>
+                <textarea name="desiredCareer" id="desiredCareer" cols="80" rows="8"></textarea> <br><br>
+
+                <input type="submit" value="Send">
+
+            </form><br>
+
+        </div>
+<hr>
+        <div>
+             <table>
+                <thead>
+                    <tr>
+                        <th> First Name </th>
+                        <th> Last Name </th>
+                     <th> Email </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Anna </td>
+                        <td> Anderwald </td>
+                        <td> anna.v.anderwald@gmail.com </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </body>
+
+
+</html>

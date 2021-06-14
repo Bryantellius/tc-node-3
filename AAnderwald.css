@@ -1,0 +1,13 @@
+h1 {
+    font-size: 48px;
+}
+
+html {
+    text-align: center;
+    font-size: 26px;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+}
