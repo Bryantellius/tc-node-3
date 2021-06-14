@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name=charset value=utf-8>
+        <title>HTML Forms and Tables Demo</title>
+        <link rel="stylesheet" href="mssever_style.css">
+    </head>
+    <body>
+        <h1>HTML Forms and Tables Demo</h1>
+        <h2>Form demo</h2>
+        <form id="form1">
+            <input type="text" name="first_name" id="first_name" aria-label="First Name" placeholder="First Name">
+            <input type="text" name="last_name" id="last_name" aria-label="Last Name" placeholder="Last Name">
+            <input type="email" name="email" id="email" aria-label="Email Address" placeholder="Email Address">
+            <p>Programming experience:</p>
+            <input type="radio" name="experience" id="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="experience" id="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="experience" id="expert">
+            <label for="expert">Expert</label>
+            <input type="text" name="career" id="career" aria-label="Desired career" placeholder="Desired career">
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Table demo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Email address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scott</td>
+                    <td>Severance</td>
+                    <td>scott@scottseverance.us</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@doe.com</td>
+                </tr>
+                <tr>
+                    <td>Someone</td>
+                    <td>Else</td>
+                    <td>someone@example.com</td>
+                </tr>
+                <tr>
+                    <td>Last</td>
+                    <td>Person</td>
+                    <td>Last.Person@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
