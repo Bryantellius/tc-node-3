@@ -1,5 +1,9 @@
-body {
-    font-family: sans-serif;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: ubuntu,sans-serif;
     color: #300;
     background-color: white;
     font-size: 16px;
@@ -60,12 +64,22 @@ button {
     margin: 1em 0;
 }
 
-input[type=text], input[type=email] {
+input[required=""] {
+    border-left: 3px solid red !important;
+}
+
+input[type=text], input[type=email], input[type=number] {
     border: 2px solid #900;
     border-width: 0 0 2px 0;
 }
 
-#form1 label {
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
+    border-color: #009;
+    border-width: 0 0 2px 0;
+    outline: 0;
+}
+
+input[type=radio] + label {
     margin-right: 3em;
 }
 
