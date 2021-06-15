@@ -83,28 +83,78 @@
         </form>
       </section>
       <section>
-        <table>
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>LastName</th>
-              <th colspan="2">Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Anthony</td>
-              <td>Khon</td>
-              <td>anthony.khon@gmail.com</td>
-            </tr>
-            <tr>
-              <td>Tanner</td>
-              <td>Riddle</td>
-              <td>triddle@trucoders.io</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </body>
-</html>
+        <form>
+          <table>
+            <tbody>
+              <tr>
+              <td>
+                <!-- Name -->
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+              </td>
+                </tr>
+              <tr>
+              <td>
+                <!-- Email -->
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </td>
+                </tr>
+              <tr>
+              <td>
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="50" rows="10"></textarea>
+              </td>
+                 </tr>           
+              <tr>
+              <td>
+                <!-- DOB -->
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" />
+              </td>
+                </tr>
+              <tr>
+              <td>
+                <!-- Favorite Color -->
+                <label for="favcolor">Favorite Color</label>
+                <input type="color" name="color" id="color" />
+              </td>
+                </tr>
+              <tr>
+              <td>
+                <!-- Yes/No -->
+                <label for="gitRadio">Git</label>
+                <input type="radio" name="favoriteTopic" id="gitRadio" value="git">
+                <label for="htmlRadio">HTML</label>
+              </td>
+                </tr>
+              <tr>
+              <td>
+                <input type="radio" name="favoriteTopic" id="htmlRadio" value="html">
+                <label for="cssRadio">CSS</label>
+                <input type="radio" name="favoriteTopic" id="cssRadio" value="css">
+                <label for="noneRadio">None of the above</label>
+                <input type="radio" name="favoriteTopic" id="noneRadio" value="None
+                of the above" checked>
+              </td>
+                </tr>
+              <tr>
+                  <td>
+                <!-- Submit Button -->  
+                <button type="submit">Submit</button>
+              </td>
+                </tr>
+            </tbody>
+            </table>
+          </form>
+        </section>
+      </main>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+            

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.flex-item{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    border: 1px dotted white;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+    
+
+html {
+    background: yellowgreen;
+    min-height: 100vh;
+}
