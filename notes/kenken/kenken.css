@@ -1,24 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   width: fit-content;
   height: fit-content;
-  margin: 3rem auto;
+  margin: 1rem auto;
   padding: 0;
   background-color: burlywood;
 }
 
-.wrapper > div {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* min() takes the minimum of two values */
+  width: min(80vw, 80vh);
+  height: min(80vw, 80vh);
+  border: 0.5rem solid black;
+}
+
+.grid-items {
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: white;
   position: relative;
-  background-color: lightblue;
-  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.5rem solid black;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.5rem solid black;
+}
+
 .prompt {
   position: absolute;
-  left: 0;
-  top: 0;
+  top: 0%;
+  left: 0%;
 }
 
 .answer {
@@ -27,112 +67,13 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  width: 800px;
-  height: 800px;
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+.special {
+  border: none;
+  font-size: 2rem;
 }
 
-#box1,
-#box3 {
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#box1,
-#box3,
-#box5,
-#box7,
-#box13,
-#box15 {
-  border-right: 1px solid gray;
-}
-
-#box10,
-#box11,
-#box16 {
-  border-top: 1px solid gray;
-}
-
-#box2,
-#box4 {
-  border-right: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#box5 {
-  border-left: 3px solid black;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#box6 {
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-}
-
-#box7 {
-  border-top: 3px solid black;
-  border-left: 3px solid black;
-}
-
-#box8 {
-  border-top: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#box9 {
-  border: 3px solid black;
-}
-
-#box10,
-#box11 {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-}
-
-#box12 {
-  border-left: 3px solid black;
-  border-right: 3px solid black;
-  border-top: 3px solid black;
-}
-
-#box13,
-#box15 {
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
-}
-
-#box14 {
-  border-right: 3px solid black;
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
-}
-
-#box16 {
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
-}
-
-@media screen and (max-width: 600px) {
-  .wrapper {
-    width: 100vw;
-    height: 100vw;
-  }
-  .wrapper > div {
-    font-size: 1rem;
-  }
-  .answer {
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    font-size: 1.5rem;
+@media (min-width: 475px) {
+  html {
+    font-size: 16px;
   }
 }
