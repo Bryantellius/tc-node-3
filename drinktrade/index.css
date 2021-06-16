@@ -5,11 +5,12 @@
 
 html {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   overflow-x: none;
   position: relative;
   width: 100vw;
   min-height: 100vh;
+  background-color: #ececec;
 }
 
 nav {
@@ -32,8 +33,12 @@ h3 {
 
 .award-hr > hr {
   width: 75px;
-  margin: 0 0.50rem;
+  margin: 0 0.5rem;
   color: white;
+  background-color: white;
+}
+
+.bg-white {
   background-color: white;
 }
 
@@ -41,11 +46,45 @@ h3 {
   color: white;
 }
 
+.star {
+    width: 3rem;
+    height: 3rem;
+}
+
 .jumbotron {
   font-size: 1rem;
   text-align: center;
   background-image: url(https://images.ctfassets.net/o88ugk6hewlf/5flRfPF9CRUHBRrlcoNkp2/543e1b59fb727b85ee76f3bb9679235b/PourCoffeeIntoMug_sm_1.jpg?fl=progressive&q=75&&fm=jpg);
+  background-position: 50% 50%;
   background-size: cover;
+}
+
+.cold-brew-bg {
+  background-image: url(https://images.ctfassets.net/o88ugk6hewlf/01CALkWWzTMoG18VONR0I4/e7ef4c7bff6b79c3f2f51fa3ba111a44/group-17_3x.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.pouring-coffee-bg {
+  background-image: url(https://images.ctfassets.net/o88ugk6hewlf/6GCHZ0oa8rcr4pWT11ZtLv/2e85a309d008557c052bb34e4e6e2439/cupping1_2x.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.stretch {
+  align-self: stretch;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+.col-8 {
+  width: 100%;
 }
 
 .nav-list {
@@ -83,6 +122,12 @@ h3 {
   padding: 0.5rem;
   font-weight: 700;
   font-variant: small-caps;
+  transition: all 0.3s;
+}
+
+.btn-outline-dark:hover {
+  border-color: red;
+  color: red;
 }
 
 .btn {
@@ -93,6 +138,7 @@ h3 {
   font-variant: small-caps;
   cursor: pointer;
   transition: all 0.3s;
+  margin: 0.75rem 0;
 }
 
 .btn:hover {
@@ -106,6 +152,7 @@ h3 {
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-col {
@@ -126,18 +173,80 @@ h3 {
 
 .page-section {
   min-height: min(60vw, 60vh);
+  height: fit-content;
   background-color: gray;
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+.px-3 {
+  padding: 0 3rem;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.mx-3 {
+  margin: 0 3rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
 .page-section-sm {
   min-height: min(30vw, 30vh);
-  background-color: red;
+  height: fit-content;
+  width: 100%;
+}
+
+.page-section-md {
+  min-height: min(45vw, 45vh);
+  height: fit-content;
   width: 100%;
 }
 
 @media (min-width: 600px) {
   .w-75-md {
     max-width: 600px;
+  }
+  .col-4 {
+    width: 33.3333%;
+  }
+
+  .col-8 {
+    width: 66.6666%;
+  }
+  html {
+      font-size: 20px;
   }
 }
