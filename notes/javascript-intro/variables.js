@@ -28,7 +28,7 @@ var age = 30;
 var age = "age";
 
 // cannot re-declare using let or const
-const age = 45;
+// const age = 45;
 
 // Camel Case for names with more than one word
 let thisIsAnExampleOfCamelCase = true;
@@ -52,3 +52,11 @@ let middleInitial = null;
 
 // BigInt
 let largeNumber = 12345678901234567890n;
+
+// Use console.log(...) to print values to the browser developer console
+console.log("Ben Bryant");
+console.log(numOfBottles);
+
+// Combine strings with '+', called concatenation
+console.log("Ben" + "Bryant")
+
