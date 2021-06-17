@@ -76,5 +76,7 @@ let age1 = 30;
 
 console.log(age1++);
 
-console.log(0 == "0")
-console.log(false == "0")
+// Type coercion turns the "0" into a number, then evaluates 0 == 0
+console.log(0 == "0"); // true
+// Type coercion turns the "0" into a number, then into a boolean, then evaluates false == false
+console.log(false == "0");
