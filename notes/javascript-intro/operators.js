@@ -76,6 +76,15 @@ let age1 = 30;
 
 console.log(age1++);
 
+let year1 = 1;
+let days = 365;
+
+// Increment year by 1, the multiply by days (365)
+let pretotal = ++year * days;
+
+// Multiply by days (365), then increment year by 1
+let posttotal = year++ * days;
+
 // Type coercion turns the "0" into a number, then evaluates 0 == 0
 console.log(0 == "0"); // true
 // Type coercion turns the "0" into a number, then into a boolean, then evaluates false == false
