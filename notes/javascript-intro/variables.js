@@ -52,11 +52,11 @@ let middleInitial = null;
 
 // BigInt
 let largeNumber = 12345678901234567890n;
+console.log(largeNumber);
 
 // Use console.log(...) to print values to the browser developer console
 console.log("Ben Bryant");
 console.log(numOfBottles);
 
 // Combine strings with '+', called concatenation
-console.log("Ben" + "Bryant")
-
+console.log("Ben" + "Bryant");
