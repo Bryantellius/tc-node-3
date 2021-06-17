@@ -16,7 +16,7 @@
 2 % 2; // 0
 
 // Assigment Operators
-let x = 3;
+let y = 3;
 
 // Comparison Operators
 
@@ -27,10 +27,10 @@ let x = 3;
 1 === 1;
 
 // != 'Loose' inequality
-2 != '2' // false
+2 != "2"; // false
 
 // !== 'Strict' inequality
-2 !== 2 // false
+2 !== 2; // false
 
 // > Greater than
 2 > 1;
@@ -49,3 +49,32 @@ let ageAsString = "30";
 
 console.log(age == ageAsString); // true
 console.log(age === ageAsString); // false
+
+// Logical Operators
+
+// || Logical OR
+2 > 1 || 1 == 1; // true
+
+// && Logical AND
+2 > 1 && 1 != 1; // false
+
+// ! Logical NOT or negation
+!true; // false
+
+let num = 10023;
+let oddBool = num % 2 == 1;
+let x = false;
+
+let res = !oddBool || x; // false
+
+// Pre/Post Increment/Decrement
+
+let age1 = 30;
+
+// some event is triggered
+// I need to use age1 then increment
+
+console.log(age1++);
+
+console.log(0 == "0")
+console.log(false == "0")
