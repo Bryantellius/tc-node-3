@@ -60,3 +60,14 @@ console.log(numOfBottles);
 
 // Combine strings with '+', called concatenation
 console.log("Ben" + "Bryant");
+
+// Concatenation of strings
+let fname = "Ben";
+
+// Combine strings (concatenate) with a '+' symbol between string values
+let story = fname + " likes to code.";
+
+// Interpolation
+
+// Combine strings by inserting variables into placeholders '${...}'
+let interpolatedStory = `${fname} likes to code.`;
