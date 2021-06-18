@@ -13,12 +13,11 @@
 9. [Evan Tansil](https://github.com/EvanTansil)
 10. [Harold Waldron](https://github.com/HaroldW9)
 11. [Wil Ledbetter](https://github.com/illvis)
-12. [Wil Ledbetter](https://github.com/illvis)
-13. [Kerri Dowridge](https://github.com/KDowridge)
-14. [Unknown](https://github.com/mdLuffypking94)
-15. [Scott Severance](https://github.com/mssever)
-16. [Stephen Waldron](https://github.com/stephenwaldron1)
-17. [Torry Haynes](https://github.com/Thaynes41)
+12. [Kerri Dowridge](https://github.com/KDowridge)
+13. [Unknown](https://github.com/mdLuffypking94)
+14. [Scott Severance](https://github.com/mssever)
+15. [Stephen Waldron](https://github.com/stephenwaldron1)
+16. [Torry Haynes](https://github.com/Thaynes41)
 
 ## Getting Started
 

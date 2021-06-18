@@ -1,6 +1,4 @@
-# June 15th, 2021
-
-## Flexbox
+# Flexbox
 
 ```
 div.flex-container {

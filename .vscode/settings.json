@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.scrollback": 3000,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.integrated.titleMode": "sequence",
+    "prettier.singleQuote": true,
+    "prettier.semi": false
+}
