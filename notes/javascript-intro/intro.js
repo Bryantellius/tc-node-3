@@ -1,34 +1,29 @@
-// This is a comment
-// Comments start with slashes and are ignored by the computer
+// Loops
 
-// Let's declare a variable (something that stores a value)
-var variableName = "value";
-let variablename = 1;
-const variable_name = true;
+let continueLoopWhileAbove0 = 10;
 
-// Here is syntax for control flow (if/else)
+// While
+// Will loop 0 or more times
 
-if (variable_name) {
-  // do something
-  console.log("variable_name's value evaluated to true");
-} else {
-  // do something else
-  console.log("variable_name's value evaluated to false");
+while (continueLoopWhileAbove0) {
+  console.log(continueLoopWhileAbove0);
+  continueLoopWhileAbove0--;
 }
 
-// Here is syntax for a loop (something that runs over and over again until it should stop
+// Do/While
+// Will loop 1 or more times
 
-// while loop
-while (variable_name) {
-  // do something repeatedly
-}
-
-// do while loop
 do {
-  // do something repeatedly
-} while (variable_name);
+  console.log(continueLoopWhileAbove0);
+  continueLoopWhileAbove0--;
+} while (continueLoopWhileAbove0);
 
-// for loop
-for (let index = 0; index < 10; index++) {
-  // do something repeatedly
+// For
+
+for (
+  let continueLoopWhileAbove0 = 10;
+  continueLoopWhileAbove0;
+  continueLoopWhileAbove0--
+) {
+  console.log(continueLoopWhileAbove0);
 }
