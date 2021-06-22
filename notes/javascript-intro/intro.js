@@ -1,15 +1,13 @@
-// Assign function to a variable
-let isEven = function (number) {
-  return number % 2 == 0;
-};
+let num1 = parseInt(prompt("Type your age in years!"))
 
-let answer = isEven(25); // false
-
-// Declare a function
-function printThreeNames(name, name2, name3 = "Unknown") {
-  console.log(name, name2, name3);
+// Function declaration
+function calculateAgeInSeconds(age) {
+  let secondsInADay = 24 * 60 * 60;
+  let ageInSeconds = age * 365 * secondsInADay;
+  return ageInSeconds;
 }
 
-let answer = isEven(18577295783084); // true
+// Using a function (invoking a function)
+let result1 = calculateAgeInSeconds(num1);
 
-let result = printThreeNames("Ben", "Seth", "Cruz"); // undefined
+alert(result1);
