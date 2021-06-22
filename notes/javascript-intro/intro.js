@@ -1,29 +1,13 @@
-// Loops
+let num1 = parseInt(prompt("Type your age in years!"))
 
-let continueLoopWhileAbove0 = 10;
-
-// While
-// Will loop 0 or more times
-
-while (continueLoopWhileAbove0) {
-  console.log(continueLoopWhileAbove0);
-  continueLoopWhileAbove0--;
+// Function declaration
+function calculateAgeInSeconds(age) {
+  let secondsInADay = 24 * 60 * 60;
+  let ageInSeconds = age * 365 * secondsInADay;
+  return ageInSeconds;
 }
 
-// Do/While
-// Will loop 1 or more times
+// Using a function (invoking a function)
+let result1 = calculateAgeInSeconds(num1);
 
-do {
-  console.log(continueLoopWhileAbove0);
-  continueLoopWhileAbove0--;
-} while (continueLoopWhileAbove0);
-
-// For
-
-for (
-  let continueLoopWhileAbove0 = 10;
-  continueLoopWhileAbove0;
-  continueLoopWhileAbove0--
-) {
-  console.log(continueLoopWhileAbove0);
-}
+alert(result1);
