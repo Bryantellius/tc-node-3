@@ -10,8 +10,8 @@ class Person {
     return `Name:\t\t${this.name}\nNum. pets:\t${this.pets}\nResidence:\t${this.residence}\nHobbies:\t${this.hobbies.join(', ')}`;
   }
 
-  greet() {
-    return 'Hello, person!';
+  greet(name) {
+    return `Hello, ${name}!`;
   }
 }
 
@@ -20,15 +20,23 @@ class Coder extends Person {
     super(name, pets, residence, hobbies);
     this.occupation = 'Full Stack Web Developer';
   }
-  greet() {
-    return 'Hello world!';
+  greet(name) {
+    if(name) {
+      var str = "I won't use your name. ";
+    } else {
+      var str = ''
+    }
+    return str + 'Hello world!';
   }
 }
 
+function report_greeting(speaker, listener) {
+  return `${speaker.name} says "${speaker.greet(listener)}"`
+}
 var general_person = new Person('Joe', 2, 'apartment', ['guitar', 'photography'])
 var coder = new Coder('Bob', 0, 'mountaintop', ['python', 'javascript'])
 
 console.log(general_person.info());
-console.log(`${general_person.name} says "${general_person.greet()}"`,'\n');
+console.log(report_greeting(general_person, 'Ben'),'\n');
 console.log(coder.info());
-console.log(`${coder.name} says "${coder.greet()}"`);
+console.log(report_greeting(coder, 'Alice'));
