@@ -4,10 +4,11 @@ class Person {
     this.pets = pets;
     this.residence = residence;
     this.hobbies = hobbies;
+    this.occupation = null;
   }
 
   info() {
-    return `Name:\t\t${this.name}\nNum. pets:\t${this.pets}\nResidence:\t${this.residence}\nHobbies:\t${this.hobbies.join(', ')}`;
+    return `Name:\t\t${this.name}\nNumber of pets:\t${this.pets}\nResidence:\t${this.residence}\nHobbies:\t${this.hobbies.join(', ')}\nOccupation:\t${this.occupation}`;
   }
 
   greet(name) {
