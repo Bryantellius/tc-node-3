@@ -33,8 +33,10 @@ class Coder extends Person {
 function report_greeting(speaker, listener) {
   return `${speaker.name} says "${speaker.greet(listener)}"`
 }
-var general_person = new Person('Joe', 2, 'apartment', ['guitar', 'photography'])
-var coder = new Coder('Bob', 0, 'mountaintop', ['python', 'javascript'])
+
+var general_person = new Person('Joe', 2, 'apartment',
+                                ['guitar', 'photography', 'travel']);
+var coder = new Coder('Bob', 0, 'mountaintop', ['python', 'javascript']);
 
 console.log(general_person.info());
 console.log(report_greeting(general_person, 'Ben'),'\n');
