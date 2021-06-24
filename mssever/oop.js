@@ -20,11 +20,11 @@ class Coder extends Person {
     super(name, pets, residence, hobbies);
     this.occupation = 'Full Stack Web Developer';
   }
+
   greet(name) {
+    let str = '';
     if(name) {
-      var str = "I won't use your name. ";
-    } else {
-      var str = ''
+      str = `I won't use your name, ${name}. `;
     }
     return str + 'Hello world!';
   }
