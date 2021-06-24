@@ -1,57 +1,66 @@
-var seasons = ["Spring", "Summer", "Fall", "Winter"];
+class OuterWear {
+  constructor(
+    color = "black",
+    size = "L",
+    fabric = "polyester",
+    pockets = 0,
+    hood = false
+  ) {
+    this.isWearing = false;
+    this.color = color;
+    this.size = size;
+    this.fabric = fabric;
+    this.pockets = pockets;
+    this.hood = hood;
+  }
 
-function printN(value) {
-  console.log(value.toUpperCase());
+  wear() {
+    this.isWearing = true;
+    console.log(`Putting on outerwear...`);
+  }
+
+  unwear() {
+    this.isWearing = false;
+    console.log(`Taking of outerwear...`);
+  }
 }
 
-// Print each season to the console after converting the letters to uppercase
-seasons.forEach(printN);
+class Jacket extends OuterWear {
+  constructor(color, size, fabric, pockets, hood, season) {
+    super(color, size, fabric, pockets, hood);
+    this.season = season;
+  }
 
-let jacket1 = {
-  color: "blue",
-  season: "Spring",
-  size: "M",
-  current: true,
-  price: 19.99
-};
-let jacket2 = {
-  color: "black",
-  season: "Winter",
-  size: "L",
-  current: true,
-  price: 79.99
-};
-let jacket3 = {
-  color: "tan",
-  season: "Summer",
-  size: "XXL",
-  current: false,
-  price: 69.99
-};
-let jacket4 = {
-  color: "red",
-  season: "Summer",
-  size: "M",
-  current: false,
-  price: 39.99
-};
-let jacket5 = {
-  color: "black",
-  season: "Winter",
-  size: "S",
-  current: true,
-  price: 599.99
-};
+  wear() {
+    this.isWearing = true;
+    console.log("Putting on a jacket...");
+  }
+}
 
-const inventory = [];
+class Inventory {
+  constructor() {
+    this.products = [];
+    this.length = 0;
+  }
 
-inventory.push(jacket1, jacket2, jacket3, jacket4, jacket5);
+  addProduct(product) {
+    this.products.push(product);
+    this.length++;
+  }
 
-console.log(inventory);
+  displayProducts() {
+    this.products.forEach(function (value) {
+      console.log(
+        `| ${value.color} | ${value.season} | ${value.size} | ${value.current} | ${value.price}\n`
+      );
+    });
+  }
+}
 
-// Show jackets that are below $60
-const updatedInventory = inventory.filter(function (value) {
-  return value.price < 60
-})
+let gap = new Inventory();
 
-console.log(updatedInventory);
+gap.addProduct(new Jacket("red", "M", "cotton", 2, true, "Fall"));
+gap.addProduct(new Jacket("red", "M", "cotton", 2, true, "Fall"));
+gap.addProduct(new Jacket("red", "M", "cotton", 2, true, "Fall"));
+
+gap.displayProducts();
