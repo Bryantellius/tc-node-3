@@ -63,7 +63,7 @@ cookbook.addRecipe(
     "Breakfast",
     [
       { name: "milk", measurement: "1 cup" },
-      { name: "eggs", measurement: "2 whole eggs" },
+      { name: "egg(s)", measurement: `2 whole ${this.name}` },
       { name: "flour", measurement: "2 cups" },
     ],
     "10 minutes",
