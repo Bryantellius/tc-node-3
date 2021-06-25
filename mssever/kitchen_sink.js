@@ -128,4 +128,5 @@ people.forEach(person => {
 - Store the returned result of that function in a variable. If the number is even, display 'The world is nice and even!' in the developer console. Otherwise if the number is odd, display 'The world is an odd place!' in the developer console.
 
 */
-alert((w=>{return w.length})('Hello world')%2==0?'The world is nice and even':'The world is an odd place');
+var input = 'Hello World';
+alert((w=>{return w.length})(input)%2==0?'The world is nice and even':'The world is an odd place');
