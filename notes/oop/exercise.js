@@ -7,12 +7,12 @@ class Person {
   }
 
   displayInfo() {
-    let formattedHobbies = "";
+    let formattedHobbies = [];
     this.hobbies.forEach(function (val, idx, arr) {
       if (arr.length > 1 && idx == arr.length - 1) {
-        formattedHobbies += `and ${val}`;
+        formattedHobbies.push(`and ${val}`);
       } else {
-        formattedHobbies += val;
+        formattedHobbies.push(val);
       }
     });
     console.log(
@@ -55,3 +55,5 @@ let seth = new Coder(
 
 ben.greet(seth.name);
 seth.greet(ben.name);
+ben.displayInfo();
+seth.displayInfo();

@@ -8,7 +8,20 @@ class Person {
   }
 
   info() {
-    return `Name:\t\t${this.name}\nNumber of pets:\t${this.pets}\nResidence:\t${this.residence}\nHobbies:\t${this.hobbies.join(', ')}\nOccupation:\t${this.occupation}`;
+    let hobbies = []
+    this.hobbies.forEach((hobby, i) => {
+      console.log(i, hobby);
+      if(this.hobbies.length > 1 && i == (this.hobbies.length - 1)) {
+        hobby = `and ${hobby}`
+      }
+      hobbies.push(hobby);
+    });
+    if (hobbies.length == 2) {
+      hobbies = hobbies.join(' ');
+    } else {
+      hobbies = hobbies.join(', ');
+    }
+    return `Name:\t\t${this.name}\nNumber of pets:\t${this.pets}\nResidence:\t${this.residence}\nHobbies:\t${hobbies}\nOccupation:\t${this.occupation}`;
   }
 
   greet(name) {
