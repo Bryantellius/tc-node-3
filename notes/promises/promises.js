@@ -1,34 +1,31 @@
-let watchTurorialCallback = new Promise((resolve, reject) => {
-  let userWatchingLiveStream = Math.round(Math.random());
+let feedback = document.getElementById("feedback");
+let form = document.getElementById("form");
+let search = document.getElementById("citySearch");
+let city = document.getElementById("city");
 
-  if (userWatchingLiveStream) {
-    resolve("Thumbs up and Subscribe");
-  } else {
-    reject({
-      name: "User Left",
-      message: "The livestream has been disconnected :(",
+const GIPHY_KEY = "54f0MhTKuI2nxwD9nhEvN4ifNwephcpz";
+const OWM_KEY = "a5a839a780c1d61b9710aca75a4e11fa";
+
+form.addEventListener("submit", fetchWeather);
+
+function fetchWeather(event) {
+  event.preventDefault();
+
+  fetch(
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
+      search.value +
+      "&appid=" +
+      OWM_KEY
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((weather) => {
+      feedback.textContent = weather.main.temp;
+      city.textContent = weather.name;
+    })
+    .catch((error) => {
+      feedback.textContent =
+        "Couldn't retrieve data for " + `'${search.value}'.`;
     });
-  }
-});
-
-function createAlert(success, value) {
-  let message = value;
-  let para = document.createElement("p");
-  para.textContent = message;
-  para.style.padding = "2rem";
-  para.style.margin = "3rem auto";
-  para.style.border = `0.5px solid ${success ? "green" : "red"}`;
-  para.style.maxWidth = "600px";
-  document.body.appendChild(para);
-  setTimeout(() => {
-    document.body.removeChild(para);
-  }, 3000);
 }
-
-watchTurorialCallback
-  .then((value) => {
-    createAlert(true, value);
-  })
-  .catch((error) => {
-    createAlert(false, error.message);
-  });
