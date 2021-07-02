@@ -1,34 +1,13 @@
-// This is a comment
-// Comments start with slashes and are ignored by the computer
+let num1 = parseInt(prompt("Type your age in years!"))
 
-// Let's declare a variable (something that stores a value)
-var variableName = "value";
-let variablename = 1;
-const variable_name = true;
-
-// Here is syntax for control flow (if/else)
-
-if (variable_name) {
-  // do something
-  console.log("variable_name's value evaluated to true");
-} else {
-  // do something else
-  console.log("variable_name's value evaluated to false");
+// Function declaration
+function calculateAgeInSeconds(age) {
+  let secondsInADay = 24 * 60 * 60;
+  let ageInSeconds = age * 365 * secondsInADay;
+  return ageInSeconds;
 }
 
-// Here is syntax for a loop (something that runs over and over again until it should stop
+// Using a function (invoking a function)
+let result1 = calculateAgeInSeconds(num1);
 
-// while loop
-while (variable_name) {
-  // do something repeatedly
-}
-
-// do while loop
-do {
-  // do something repeatedly
-} while (variable_name);
-
-// for loop
-for (let index = 0; index < 10; index++) {
-  // do something repeatedly
-}
+alert(result1);
