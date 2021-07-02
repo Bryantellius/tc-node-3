@@ -1,0 +1,20 @@
+{
+  "name": "esmodules_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "open dist/index.html"
+  },
+  "author": "Ben Bryant",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.5"
+  },
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
