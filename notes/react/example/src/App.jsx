@@ -1,22 +1,34 @@
-import "./App.css";
-import { Component } from "react";
-import Header from "./page-components/Header";
+import { Component } from 'react'
+import './App.css'
+import Blog from './views/Blog'
 
 class App extends Component {
-  render() {
-    const link = {
-      text: "React Docs",
-      src: "https://reactjs.org",
-    };
+  constructor() {
+    super()
 
-    return (
-      <div className="App">
-        <main className="App-header">
-          <Header link={link} />
-        </main>
-      </div>
-    );
+    this.state = {
+      hasLoaded: false,
+      list: [],
+      score: {
+        home: 0,
+        away: 0,
+      },
+      num: 4,
+    }
+  }
+
+  doSomething() {
+    this.setState({
+      score: {
+        home: this.score.home + 1,
+        away: this.state.away,
+      },
+    })
+  }
+
+  render() {
+    return <Blog />
   }
 }
 
-export default App;
+export default App
