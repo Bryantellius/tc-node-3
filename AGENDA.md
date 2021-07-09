@@ -1,11 +1,11 @@
-# June 17th, 2021
+# July 9, 2021
 
 ## To Do
 
-1. Recap HTML/CSS briefly
-2. Cover JavaScript Intro and Variables
-3. JS Intro and Variables Exercise
-4. Cover JavaScript Operators
-5. JavaScript Operators Exercise
-6. Cover JavaScript Selection Statements
-7. JavaScript Selection Statements Exercises
+1. Recap Class and Functional Components
+2. Cover Functional Components with props
+3. Cover React Hooks
+4. Work on React Hooks Exercise
+5. Practice React
+6. Time depending: Cover React Routing
+7. Time depending: Work on React Routing Exercise
