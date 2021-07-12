@@ -1,42 +1,28 @@
-import { Component } from 'react'
-import './App.css'
-import Colors from './views/Colors'
+import { useState, useEffect } from "react";
+import "./App.css";
 
-class App extends Component {
-  constructor() {
-    super()
+function App() {
+  let [weather, setWeather] = useState(null);
+  // can be read as: let [weather, setWeather] = ["weather", (newWeather) => setState(newWeather)]
+  // same as:
+  // let weather = state[0];
+  // let setWeather = state[1];
 
-    this.state = {
-      colors: ['#000000', '#FFFFFF', '#0094c8'],
-    }
+  useEffect(() => fetchWeather(), []);
 
-    this.randomHex = this.randomHex.bind(this)
-    this.handleRandomizer = this.handleRandomizer.bind(this)
+  async function fetchWeather() {
+    let res = await fetch(
+      "https://api.openweathermap.org/data/2.5/weather?q=Birmingham,US-AL&units=imperial&appid=a5a839a780c1d61b9710aca75a4e11fa"
+    );
+    let data = await res.json();
+    setWeather(data);
   }
 
-  randomHex() {
-    let r = Math.round(Math.random() * 255).toString(16)
-    let g = Math.round(Math.random() * 255).toString(16)
-    let b = Math.round(Math.random() * 255).toString(16)
-
-    return `#${r}${g}${b}`
-  }
-
-  handleRandomizer(e) {
-    let colors = this.state.colors.map(this.randomHex)
-    this.setState({ colors })
-  }
-
-  render() {
-    return (
-      <>
-        <button onClick={this.handleRandomizer}>Randomize</button>
-        {this.state.colors.map((color, idx) => (
-          <Colors color={color} key={idx} />
-        ))}
-      </>
-    )
-  }
+  return (
+    <main>
+      <h1>{weather?.main.temp}°F</h1>
+    </main>
+  );
 }
 
-export default App
+export default App;

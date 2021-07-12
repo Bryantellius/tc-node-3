@@ -1,9 +1,16 @@
-class App {
+class ReactGlobal {
   constructor(props) {
     this.props = props
 
-    this.state = {
-      value: 1,
+    this.state = []
+  }
+
+  useState(initialState) {
+    if(this.state[0]) {
+      return [this.state[0].value, this.state[0].func]
+    } else {
+      this.state.push({ value: initialState, func: updateState})
+      return [this.state[0].value, this.state[0].func]
     }
   }
 
