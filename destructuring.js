@@ -1,34 +1,9 @@
-const people = [
-  { name: "Ben", color: "Red" },
-  { name: "Tanner", color: "Blue" },
-];
+// Destructuring Syntax for Objects
+let { name } = { name: "Ben", age: 55 };
 
-const [ben, tanner] = people;
+// Declares a variable name with the value of "Ben"
 
-// ben == {name: "Ben", color: "Red"}
-// tanner == {name: "Tanner", color: "Blue"}
+// Destructuring Syntax for Arrays
+let [name1] = ["Ben", "Will", "Mae"];
 
-const props = {
-  title: "Welcome to React!",
-  handleInput: (event) => {
-    // do something
-  },
-};
-
-const { title } = props;
-
-// title == "Welcome to React!"
-
-// Define a function two ways:
-
-// Assign a function to a variable
-
-const add = (x, y) => {
-  return x + y;
-};
-
-// Declare a function
-
-function add(x, y) {
-  return x + y;
-}
+// Declares a variable name1 with the value of "Ben"
