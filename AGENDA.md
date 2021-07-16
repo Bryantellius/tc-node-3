@@ -1,12 +1,11 @@
-# July 15, 2021
+# July 16, 2021
 
 ## To Do
 
 1. JS Interview Questions
-2. SQL Intro Lecture
-3. SQL Intro Exercise
-4. SQL Joins Lecture
-5. SQL Joins Exercise
+2. SQL Intro Exercise
+3. SQL Joins Lecture
+4. SQL Joins Exercise
 
 ## JS Interview Questions
 
