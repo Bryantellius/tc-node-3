@@ -41,7 +41,15 @@ This process is almost exactly like the way that you would use addEventListener 
 
 Let’s look at a quick real-world example:
 
-![alt_text](pic2.png)
+```
+http.createServer(function(request, response) {
+    response.writeHead(200, {"Content-Type": "text/html"})
+    response.end("Hello World!")
+})
+.listen(8080, function () {
+    console.log("Server is listening...")
+})
+```
 
 This snippet is from our very first lesson that you’ll be following very soon. Basically this code is creating a server and saying, “any time we get a network request run this callback function”. This function happens to respond with an HTML header 1 tag displaying ‘Hello World’. So if you go to a browser and navigate to the correct address and port you would see that text on your screen.
 
@@ -59,15 +67,16 @@ The file you have just created must be initiated by Node.js before any action ca
 
 Start your command line interface, write node myfirst.js and hit enter:
 
-![alt_text](pic3.png)
+```
+$ node myFirst.js
+Server is listening...
+```
 
 Now, your computer works as a server!
 
 If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
 
-Start your internet browser, and type in the address: [http://localhost:](http://localhost:8080/)<span style="text-decoration:underline;">8080</span>
-
-![alt_text](pic4.png)
+Start your internet browser, and type in the address: [http://localhost:8080](http://localhost:8080/)
 
 # Quiz:
 
