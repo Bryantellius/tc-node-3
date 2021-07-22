@@ -1,8 +1,9 @@
-# July 20, 2021
+# July 21, 2021
 
 ## To Do
 
-1. Binary Master Class
-2. JS Coding Problems
-3. Node Intro Lecture
-4. Node Intro Exercise
+1. JS Coding Problems
+2. Postman First Look
+3. Node HTTP Exercise
+4. Node FS Lecture
+5. Node FS Exercise
