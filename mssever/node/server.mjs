@@ -5,8 +5,10 @@ import fs from 'fs'
 import { fileURLToPath } from 'url';
 import path from 'path';
 
+// stolen from https://stackoverflow.com/a/64383997/713735
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
 const port = 8080
 
 createServer(function (request, response) {
