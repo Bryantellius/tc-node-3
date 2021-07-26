@@ -1,9 +1,12 @@
-# July 21, 2021
+# July 22, 2021
 
 ## To Do
 
 1. JS Coding Problems
-2. Postman First Look
-3. Node HTTP Exercise
-4. Node FS Lecture
-5. Node FS Exercise
+2. Node FS Exercise
+3. Node Events Lecture
+4. Node Events Exercise
+5. Node Streams Lecture
+6. Node Streams Exercise
+
+## Node FS 
