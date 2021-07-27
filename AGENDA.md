@@ -1,12 +1,12 @@
-# July 22, 2021
+# July 26, 2021
 
 ## To Do
 
-1. JS Coding Problems
-2. Node FS Exercise
-3. Node Events Lecture
-4. Node Events Exercise
-5. Node Streams Lecture
-6. Node Streams Exercise
+1. JS Coding/Interview Problems
+2. Node Review
+3. Node Lab Exercise
+4. Express.js Routing Lecture
+5. Express.js Routing Exercise
 
-## Node FS 
+## Node
+
