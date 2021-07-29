@@ -1,3 +1,31 @@
+const obj = {
+  let: "test",
+};
+
+obj.let; // "test"
+
+const controller = new AbortController();
+
+fetch("https://example.com", { signal: controller.signal });
+
+controller.abort();
+
+// Scope
+
+// outside of any local scope
+
+function func() {
+  // local, function scope
+}
+
+// What is same-origin policy?
+// example.com not the same 'origin' as example.org
+// example.com/about => about.html => example.com/about.js
+// example.com => example.org/app.js
+
+// cors => CROSS ORIGIN RESOURCE SHARING
+// fetch("https://example.com", { mode: "cors" })
+
 function toInitialCapital(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
@@ -8,7 +36,7 @@ const nums = [1, 2, 3, 4, 5];
 
 // Return a random value from this array of nums?
 
-nums[Math.floor(Math.random() * nums.length)] // random value from the array
+nums[Math.floor(Math.random() * nums.length)]; // random value from the array
 
 const subNums = nums.slice(1, 4); // [2, 3, 4]
 
