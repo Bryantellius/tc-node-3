@@ -1,69 +1,55 @@
-const obj = {
-  let: "test",
-};
+class QandA {
+  constructor(q, a) {
+    this.q = q;
+    this.a = a;
+  }
 
-obj.let; // "test"
+  evaluateAnswer(a) {
+    return a === this.a;
+  }
 
-const controller = new AbortController();
-
-fetch("https://example.com", { signal: controller.signal });
-
-controller.abort();
-
-// Scope
-
-// outside of any local scope
-
-function func() {
-  // local, function scope
+  displayQ() {
+    return this.q;
+  }
 }
 
-// What is same-origin policy?
-// example.com not the same 'origin' as example.org
-// example.com/about => about.html => example.com/about.js
-// example.com => example.org/app.js
-
-// cors => CROSS ORIGIN RESOURCE SHARING
-// fetch("https://example.com", { mode: "cors" })
-
-function toInitialCapital(str) {
-  return str[0].toUpperCase() + str.slice(1);
+class BlankQandA extends QandA {
+  displayQ() {
+    return this.q.replace(this.a, "_".repeat(this.a.length));
+  }
 }
 
-// Array slice vs splice
+const data = [
+  new BlankQandA(
+    "var, let, and const are three declaration keywords for variables in JavaScript.",
+    "const"
+  ),
+  new QandA(
+    "What language (although there are numerous) is considered significantly more usable than common C#?",
+    "javascript"
+  ),
+  new QandA("What arithmetic operator for division remainder?", "%"),
+];
 
-const nums = [1, 2, 3, 4, 5];
+let currentIndex = 0;
 
-// Return a random value from this array of nums?
+const feedback = document.querySelector("#feedback");
+const answer = document.querySelector("#answer");
+const prompt = document.querySelector("#prompt");
+const submit = document.querySelector("#submit");
 
-nums[Math.floor(Math.random() * nums.length)]; // random value from the array
+prompt.textContent = data[currentIndex].displayQ();
+submit.addEventListener("click", (e) => {
+  const a = answer.value;
+  feedback.textContent = data[currentIndex++].evaluateAnswer(a);
 
-const subNums = nums.slice(1, 4); // [2, 3, 4]
-
-const removedNums = nums.splice(2, 1); // [3], changes the existing array to [1, 2, 4, 5]
-
-// Finding the keys of an object
-
-const applicant = {
-  firstname: "Ben",
-  lastname: "Bryant",
-  city: "Hoover",
-  resume: "resume.pdf",
-  apply: function () {
-    // ...
-  },
-};
-
-Object.keys(applicant); // ["firstname", "lastname", "city", "resume"]
-
-// Finding the values of an object
-
-Object.values(applicant); // ["Ben", "Bryant", "Hoover", "resume.pdf"]
-
-// Find the key/value pair of an object
-
-Object.entries(applicant); // [["firstname", "Ben"], ["lastname", "Bryant"], ["city", "Hoover"], ["resume", "resume.pdf"]]
-
-for (let [key, value] of Object.entries(applicant)) {
-  console.log(key, value);
-}
+  setTimeout(() => {
+    feedback.textContent = "...";
+    prompt.textContent =
+      data[
+        currentIndex < data.length ? currentIndex : (currentIndex = 0)
+      ].displayQ();
+    answer.value = "";
+    answer.focus();
+  }, 3000);
+});
